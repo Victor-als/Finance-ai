@@ -11,7 +11,7 @@ import { upsertTransactionSchema } from "./schema";
 import { revalidatePath } from "next/cache";
 
 interface UpsertTransactionParams {
-  id?: string;
+  id: string;
   name: string;
   amount: number;
   type: TransactionType;
