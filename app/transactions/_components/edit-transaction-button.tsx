@@ -1,14 +1,15 @@
 "use client";
-import { useState } from "react";
 
-import { PencilIcon } from "lucide-react";
 import { Button } from "@/app/_components/ui/button";
 import UpsertTransactionDialog from "@/app/_components/upsert-transaction-dialog";
 import { Transaction } from "@prisma/client";
+import { PencilIcon } from "lucide-react";
+import { useState } from "react";
 
 interface EditTransactionButtonProps {
   transaction: Transaction;
 }
+
 const EditTransactionButton = ({ transaction }: EditTransactionButtonProps) => {
   const [dialogIsOpen, setDialogIsOpen] = useState(false);
 
@@ -27,7 +28,7 @@ const EditTransactionButton = ({ transaction }: EditTransactionButtonProps) => {
         setIsOpen={setDialogIsOpen}
         defaultValues={{
           ...transaction,
-          amount: Number(transaction.category),
+          amount: Number(transaction.amount),
         }}
         transactionId={transaction.id}
       />
