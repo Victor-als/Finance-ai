@@ -14,6 +14,7 @@ interface SummaryCards {
   depositsTotal: number;
   investmentsTotal: number;
   expensesTotal: number;
+  userCanAddTransaction: boolean;
 }
 
 const SummaryCards = async ({
@@ -22,6 +23,7 @@ const SummaryCards = async ({
   depositsTotal,
   expensesTotal,
   investmentsTotal,
+  userCanAddTransaction,
 }: SummaryCards) => {
   const monthIsInvalid = !month || !isMatch(month, "MM");
   if (monthIsInvalid) {
@@ -35,6 +37,7 @@ const SummaryCards = async ({
         title="Saldo"
         amount={balance}
         size={"large"}
+        userCanAddTransaction={userCanAddTransaction}
       />
 
       <div className="grid grid-cols-3 gap-6">
