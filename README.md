@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Finance AI
 
-## Getting Started
+Esse projeto é um SAAS de gestão de finaças com integração do ChatGPT para gerar relatorios, nele vc pode gerenciar toda sua finança e se organizar melhor. 
 
-First, run the development server:
+# Imagens da tela.
+![Opera Instantâneo_2024-11-19_142230_finance-ai-nu-murex vercel app](https://github.com/user-attachments/assets/bbfc9254-1e61-4b2e-8a8f-a213c1d11a4c)
+![Opera Instantâneo_2024-11-19_142255_finance-ai-nu-murex vercel app](https://github.com/user-attachments/assets/c9ed3a04-a002-4de5-a855-0333978180dd)
+![Opera Instantâneo_2024-11-19_142310_finance-ai-nu-murex vercel app](https://github.com/user-attachments/assets/41c92db5-d220-470f-a89a-7488c76a31e4)
+![Opera Instantâneo_2024-11-19_142323_finance-ai-nu-murex vercel app](https://github.com/user-attachments/assets/d830baa4-e2a9-4665-b0cb-7623995c2cad)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+## Tenologias usadas no projeto
+
+- React.js
+- Tailwind
+- Next.js
+- Prisma
+- postgreSql
+- Zod
+
+## Acesse o aplicativo publicado pelo link: 
+```sh
+https://finance-ai-nu-murex.vercel.app/login
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Para rodar o projeto localmente
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone o repositório:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```sh
+$ git clone https://github.com/Victor-als/Finance-ai
+```
 
-## Learn More
+3. Instale as dependências:
 
-To learn more about Next.js, take a look at the following resources:
+```sh
+npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Rode localmente:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```sh
+npm run dev
+```
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+ 
